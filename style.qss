@@ -1,0 +1,103 @@
+/* style.qss */
+
+/* Estilo general de la ventana */
+QWidget {
+    background-color: #2E3440;  /* Fondo oscuro */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    color: #D8DEE9;  /* Texto claro */
+}
+
+QPushButton#btnCerrar{
+
+    background-color: #4C566A;
+}
+
+QPushButton#btnCerrar:hover{
+
+    background-color: #135e1d;
+}
+
+/* Estilo de los botones */
+QPushButton {
+    background-color: #4C566A;
+    color: #ECEFF4;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    qproperty-iconSize: 25px 25px;  /* Tamaño de los iconos */
+}
+
+QPushButton:hover {
+    background-color: #5E81AC;
+}
+
+QPushButton:pressed {
+    background-color: #81A1C1;
+}
+
+/* Estilo de las etiquetas */
+QLabel {
+    color: #D8DEE9;
+    font-weight: bold;
+}
+
+/* Estilo de las listas */
+QListWidget {
+    background-color: #3B4252;
+    border: 1px solid #4C566A;
+    color: #ECEFF4;
+}
+
+QScrollArea {
+    background-color: #3B4252;
+    border: 1px solid #4C566A;
+}
+
+QProgressBar#GeneralProgressBar{
+    max-width: 280px;
+}
+
+/* Estilo de las barras de progreso */
+QProgressBar {
+    border: 1px solid #4C566A;
+    border-radius: 5px;
+    text-align: center;
+    color: #ECEFF4;
+    background-color: #3B4252;
+    padding: 0px;
+    margin: 0px;
+}
+
+QProgressBar::chunk {
+    background-color: #88C0D0;
+}
+
+
+/* Estilo de la tabla */
+QTableWidget {
+    background-color: #3B4252;
+    border: 1px solid #4C566A;
+    color: #ECEFF4;
+}
+
+QHeaderView::section {
+    background-color: #4C566A;
+    padding: 4px;
+    border: 1px solid #4C566A;
+    color: #ECEFF4;
+}
+
+
+/* Estilo de la barra de progreso en el reporte */
+QProgressBar#reporteProgressBar {
+    border: 1px solid #4C566A;
+    border-radius: 5px;
+    text-align: center;
+    color: #ECEFF4;
+    background-color: #3B4252;
+}
+
+QProgressBar#reporteProgressBar::chunk {
+    background-color: #A3BE8C;
+}
